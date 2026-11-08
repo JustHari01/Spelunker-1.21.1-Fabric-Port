@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "spelunker",
+  "version": "${version}",
+
+  "name": "Spelunker",
+  "description": "Unofficial Fabric port of Spelunker for Minecraft 1.21.1. Brew a potion that outlines nearby configured ores.",
+  "authors": [
+    "Leximon",
+    "RasmusTV"
+  ],
+  "contributors": [
+    "JustHari01 (1.21.1 Fabric port)",
+    "Loki0500 (Textures)",
+    "Smato (French Translation)",
+    "Rad233 (Chinese Translation)"
+  ],
+  "contact": {
+    "homepage": "https://github.com/JustHari01/Spelunker-1.21.1-Fabric-Port",
+    "sources": "https://github.com/JustHari01/Spelunker-1.21.1-Fabric-Port",
+    "issues": "https://github.com/JustHari01/Spelunker-1.21.1-Fabric-Port/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/spelunker/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.leximon.spelunker.SpelunkerMod"
+    ],
+    "client": [
+      "de.leximon.spelunker.SpelunkerModClient"
+    ]
+  },
+  "mixins": [
+    "spelunker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  }
+}
