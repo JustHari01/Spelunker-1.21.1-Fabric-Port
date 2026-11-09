@@ -33,6 +33,10 @@ The project uses the upstream MIT license in `LICENSE`. Hjson Java 3.1.0 is bund
 
 The original 18×18 in-game icon remains unchanged in the mod JAR. `release-assets/spelunker-curseforge-logo.png` is a separate AI-generated CurseForge project avatar, not an in-game asset or screenshot; it is not intended for a Modrinth project page.
 
+## Test status
+
+A clean, isolated Fabric 1.21.1 dedicated server with Loader 0.16.14 and Fabric API 0.116.18 loaded this JAR and initialized a world successfully (`Done` in 6.186 seconds). This verified server startup and registry initialization. A client login, potion interaction, and client-side rendering have not been tested; do not treat those behaviors as runtime-verified.
+
 ## AI disclosure
 
 AI tools assisted with the 1.21.1 compatibility port, API migration, configuration adaptation, the CurseForge project avatar, and release documentation.
